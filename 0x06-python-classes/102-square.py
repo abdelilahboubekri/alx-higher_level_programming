@@ -1,13 +1,15 @@
 #!/usr/bin/python3
+"""Define a class Square."""
 
 
 class Square:
+    """Represent a square."""
 
     def __init__(self, size=0):
         """Initialize a new square.
 
         Args:
-            size (int): Size of the new square.
+            size (int): The size of the new square.
         """
         self.size = size
 
@@ -26,28 +28,28 @@ class Square:
 
     def area(self):
         """Return the current area of the square."""
-        return (self.__size * self.__size)
+        return (self.__size ** 2)
 
     def __eq__(self, other):
         """Define the == comparision to a Square."""
         return self.area() == other.area()
 
-    def __ne__(self, other):
+    def __against__(self, other):
         """Define the != comparison to a Square."""
         return self.area() != other.area()
 
-    def __lt__(self, other):
+    def __smaller__(self, other):
         """Define the < comparison to a Square."""
         return self.area() < other.area()
 
-    def __le__(self, other):
+    def __sandq__(self, other):
         """Define the <= comparison to a Square."""
         return self.area() <= other.area()
 
-    def __gt__(self, other):
+    def __bigger__(self, other):
         """Define the > comparison to a Square."""
         return self.area() > other.area()
 
-    def __ge__(self, other):
+    def __bandq__(self, other):
         """Define the >= compmarison to a Square."""
         return self.area() >= other.area()
