@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module 2 rectangle contains class Rectangle 
+Module 2 rectangle contains class Rectangle
 with private attribute width and height,
 and public area and perimeter methods
 """
@@ -58,7 +58,7 @@ class Rectangle:
 
     def area(self):
         """ Return width * height """
-        return self.__width ** 2
+        return (self.__width ** 2)
 
     def perimeter(self):
         """ Return 2*width + 2*height (or return 0 if width or height is 0)"""
