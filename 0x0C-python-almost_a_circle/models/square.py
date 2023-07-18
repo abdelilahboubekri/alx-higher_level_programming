@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Module that contains class Square,
-    inheritance of class Rectangle
+inheritance of class Rectangle
 """
 from models.rectangle import Rectangle
 
@@ -70,4 +70,4 @@ class Square(Rectangle):
             else:
                 dict_res[key] = getattr(self, key)
 
-        return dict_res
+        return (dict_res)
